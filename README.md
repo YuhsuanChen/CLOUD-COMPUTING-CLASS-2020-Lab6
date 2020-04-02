@@ -8,7 +8,7 @@ How to fixed it? By checking the listener tab below the load balancer screen, it
 
 ![loadbalancer_listenerport](./Img/loadbalancer_listenerport.png)
 
-After add a new https rule to current security group, we see the picture belowed that shows we can still enter the website by click Show Details (Common way when want to enter the not private https link)
+After add a new https rule to current security group, we see the picture below that shows we can still enter the website by click Show Details (Common way when want to enter the not private https link)
 
  <p align="center"><img src="./Img/Connection_not_private.png" width="600" height="200" alt="Connection_not_private"/></p>
 
