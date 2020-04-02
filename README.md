@@ -79,9 +79,17 @@ Then we can also check it through our lambda API endpoint, and see if the item w
 
 ## Q625. Have you been able to debug the code of the Lambda function? If the answer is yes, check that you are using the root API keys. Erase such keys and create a new testing user with the required permissions.
 
+**Yes**, we are able to debug and run it locally. Using **aws configure list** we checked that we were using **root API keys**. 
+
+- We created another user with a full access to the shopping-list Dynamo table. 
+- we erased the previous root api keys
+- We configure the aws cli with the new user credetials
+- We run the lambda function with the new user and it runs succeffuly. 
+
 
 ## Q626. What are the minimum permissions that the user's API keys needs to execute the Lambda function locally?
 
+The minimum requirements to run the lambda function locally are to give read and write permission to the new user.
 
 ## Q627. Create a piece of code (Python or bash) to reproduce the above steps required to launch a new AWS Lambda function and AWS API gateway.
 
