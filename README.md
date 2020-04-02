@@ -141,7 +141,7 @@ echo "The url is: https://${APIID}.execute-api.${REGION}.amazonaws.com/prod/igor
 
 ### Challenges 
 1. 	**AWS Load Balancer-503 services temporarily unavailable**<br/>
-![loadbalancer_503 error](./Img/service_503.png)
+![loadbalancer_503 error](./Img/service_503.PNG)
 **Reason**: The target groups for the load balancer had no registered targets
 
 Using load balancer target group we register **apache-web-server**  EC2 Instance to be used by **primary-apache-web-server-target**
