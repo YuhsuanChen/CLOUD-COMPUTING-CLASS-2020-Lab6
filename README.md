@@ -154,7 +154,7 @@ User was not allowed to scan, delete, update, and insert data to the DynamoDB sh
 **Solution**: We use the defualt 50 Gib
 5. Unable to login to the  Ec2 instance using ssh -1 "configureation.pem" root@ec-domain using root account
 
-   **Solution**:We use ubuntu@ec2-domain instead of root@ec2-domain.
+   **Solution**:We use ubuntu@ec2-instance-domain instead of root@ec2-instance-domain.
 
 
 
