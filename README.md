@@ -76,5 +76,24 @@ Then we can also check it through our lambda API endpoint, and see if the item w
 ## Q627. Create a piece of code (Python or bash) to reproduce the above steps required to launch a new AWS Lambda function and AWS API gateway.
 
 
+### Challenges 
+1. 	**AWS Load Balancer-503 services temporarily unavailable**<br/>
+**Reason**: The target groups for the load balancer had no registered targets
+
+Using load balancer target group register **apache-web-server** to the load balancer to be use by **primary-apache-web-server-target**
+
+2. **Error when we add data to the shopping list using the static web site we created**<br/>
+**Reason**: Existing shopping-list table primary Key(email) and thingid in the scripts.js and index.html was not matched 
+**Solutions**: Modifying the shopping-list table primary key with thingid instead of email to match with the **thingid** field in the script.js and index.html 
+
+3. **DynamoDB Access Denied**<br/>
+User was not allowed to scan, delete, update, and insert data to the DynamoDB shopping-list table when lambda_handler (event, context) function was invoked.**<br/>
+**Solution**:modify the user permission with **AmazonDynamoDBFullAccess** to give a full access to DynamoDB table 
+4. Unable to create **apache-web-server** instance with 8 GiB SSD.<br/>
+**Solution**: We use the defualt 50 Gib
+5. Unable to login to the  Ec2 instance using ssh -1 "configureation.pem" root@ec-domain using root account
+
+   **Solution**:We use ubuntu@ec2-domain instead of root@ec2-domain.
+
 
 
