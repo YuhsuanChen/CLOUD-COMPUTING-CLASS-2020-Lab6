@@ -37,11 +37,10 @@ Note: In either cases the loader balancer is running
 ## Q614. How are you going to end this section regarding the use of AWS resources?
 
 As we can tested from configureation of the two ec2 instance created with auto scalling group are always running even after  we terminate/stop them. This leades to resource wastage specially for big applications it may cost a lot.<br/>
-Therfore, In order to save  resources when we finish our task it is better to terminate them maunally.
 
-
-
-
+Therfore, In order to save resources after we finish our task we decided to terminate manually as follows
+1. From the auto scalling group, we suspeded the **web-server-auto-scaling-group** to save aws resource. 
+2. Also we decided to **detach** the individual ec2 instance from the auto scaling group we created. 
 
 
 ## Q615. Create a piece of code (Python or bash) to reproduce the above steps required to launch a new set of web servers with a load balancer. Start using the AMI that you have already created.
@@ -164,6 +163,6 @@ We tried many times with different settings but was not successfully to lunch th
 5. Unable to login to the  Ec2 instance using ssh -1 "configureation.pem" root@ec-domain using the root account
 
    **Solution**:We use ssh - i **ubuntu@ec2-instance-domain** instead of ssh -i **root@ec2-instance-domain**
-
+6. Generally the characterstics of the auto scaling group was strange
 
 
