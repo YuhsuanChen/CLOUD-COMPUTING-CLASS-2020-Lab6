@@ -146,7 +146,7 @@ echo "The url is: https://${APIID}.execute-api.${REGION}.amazonaws.com/prod/igor
  <p align="center"><img src="./Img/service_503.PNG" width="50%" height="50%" alt="InstanceAlive"/></p>
       **Reason**: The target groups for the load balancer had no registered targets
 
-      **Solution**:Using load balancer target group we register **apache-web-server**  EC2 Instance to be used by **primary-apache-web-  server-target**
+   **Solution**:Using load balancer target group we register **apache-web-server**  EC2 Instance to be used by **primary-apache-web-  server-target**
 
 2. **Error when we add data to the shopping list using the static web site we created**<br/>
   **Reason**: Existing shopping-list table primary Key(email) and thingid in the scripts.js and index.html was not matched 
