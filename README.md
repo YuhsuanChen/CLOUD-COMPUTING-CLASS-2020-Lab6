@@ -80,7 +80,7 @@ Then we can also check it through our lambda API endpoint, and see if the item w
 1. 	**AWS Load Balancer-503 services temporarily unavailable**<br/>
 **Reason**: The target groups for the load balancer had no registered targets
 
-Using load balancer target group register **apache-web-server** to the load balancer to be use by **primary-apache-web-server-target**
+Using load balancer target group we register **apache-web-server**  EC2 Instance to be used by **primary-apache-web-server-target**
 
 2. **Error when we add data to the shopping list using the static web site we created**<br/>
 **Reason**: Existing shopping-list table primary Key(email) and thingid in the scripts.js and index.html was not matched 
