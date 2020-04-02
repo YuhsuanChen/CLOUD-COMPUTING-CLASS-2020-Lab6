@@ -59,8 +59,7 @@ Therefore, as we understood from the lamda function and the general configuratio
 
 ## Q622. Does the reply of the above URL match what it should be expected? Why?
 https://f0h43fef16.execute-api.eu-west-1.amazonaws.com/default/serverless-controller?TableName=shopping-list shows as what we expected.<br/>
- At the very beginning, we were not 100% sure about what the given URL was invoking but later when we insert an item into the DynamoDB table using the static website and from the response we got things becomes more understable<br/> to see if we can see it in the website that URL return and the answer is yes as follow
-We add one new item in dynamodb that we created .
+ At the very beginning, we were not 100% sure about what the given URL was invoking but later when we insert an item into the DynamoDB table using the static website to see if we can see it in the website that URL returns<br/>
 
 ![ReturnDynamoDB](./Img/ReturnDynamoDB.png)
 
