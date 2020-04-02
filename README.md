@@ -5,14 +5,21 @@
 
 When using https, It’s just simply not working by showing page not respond and cannot open.
 How to fixed it? By checking the listener tab below the load balancer screen, it shows The security group for your load balancer does not allow traffic on this listener port. So we add a new https rule to the security group .
+
 ![loadbalancer_listenerport](./Img/loadbalancer_listenerport.png)
-Then we see here, we can still enter the website by click Show Details 
+
+After add a new https rule to current security group, we see the picture belowed that shows we can still enter the website by click Show Details (Common way when want to enter the not private https link)
+
 ![Connection_not_private](./Img/Connection_not_private.png)
+
+After we choose to enter the website, we can see the page shows that our instance( with id) alive.
+
 ![InstanceAlive](./Img/InstanceAlive.png)
 
 ## Q612. Stop all three EC2 instances and wait approx. 5 minutes. What happens? Why?
 
 It shows 503 Service Temporarily unavailable, this is because there’s no working instance for the load balancer
+
 ![StopWorkingInstance](./Img/StopWorkingInstance.png)
 
 ## Q613. Terminate all three EC2 instances and wait approx. 5 minutes. What happens? Why?
@@ -39,11 +46,12 @@ aws elbv2 create-listener --load-balancer-arn ${lb_arn} --protocol TCP --port 80
 
 ```
 
-##Q621. What is the list of events that the above URL triggers?
+## Q621. What is the list of events that the above URL triggers?
 When we put ?TableName=shopping-list at the end URL it return us information about a table name shopping-list in dynamodb, same idea if we put ?TableName=gsg-signup-table it return as information aobut the dynamodb we created 2 weeks ago. Inside the page, we can see the items that in the requested table and when did the table create.
 
 ## Q622. Does the reply of the above URL match what it should be expected? Why?
 https://f0h43fef16.execute-api.eu-west-1.amazonaws.com/default/serverless-controller?TableName=shopping-list shows as what we expected. We add one new item in dynamodb that we created to see if we can see it in the website that URL return and the answer is yes as follow.
+
 ![ReturnDynamoDB](./Img/ReturnDynamoDB.png)
 
 ## Q623. Explain what happens (actions and parts activated) when you type the URL in your browser to obtain the page updated with the shopping list.
@@ -52,7 +60,9 @@ When access the page using index.html, we can see it comes with the css decorati
 
 ## Q624. Explain what happens (actions and parts activated) when you type a new item in the New Thing box.
 At first we got error because the key of shopping list that we used is email however it should be thingid as correspond to the script.js that use get and post functions. After debug, the data we input can sucessfully put to the shopping list and will also trigger the get function of the js file to show the item in the database as the list
+
 ![AddnewThing](./Img/AddnewThing.png)
+
 Then we can also check it through our lambda API endpoint, and see if the item were successfully added to the database.
 ![AddnewThing2](./Img/AddnewThing2.png)
 
