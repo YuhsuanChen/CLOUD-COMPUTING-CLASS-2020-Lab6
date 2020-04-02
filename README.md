@@ -10,17 +10,18 @@ How to fixed it? By checking the listener tab below the load balancer screen, it
 
 After add a new https rule to current security group, we see the picture belowed that shows we can still enter the website by click Show Details (Common way when want to enter the not private https link)
 
- <p align="center"><img src="./Img/Connection_not_private.png" width="300" height="100" alt="Connection_not_private"/></p>
+ <p align="center"><img src="./Img/Connection_not_private.png" width="600" height="200" alt="Connection_not_private"/></p>
 
 After we choose to enter the website, we can see the page shows that our instance( with id) alive.
 
-![InstanceAlive](./Img/InstanceAlive.png)
+ <p align="center"><img src="./Img/InstanceAlive.png" width="300" height="33" alt="InstanceAlive"/></p>
+
 
 ## Q612. Stop all three EC2 instances and wait approx. 5 minutes. What happens? Why?
 
 It shows 503 Service Temporarily unavailable, this is because there’s no working instance for the load balancer
+ <p align="center"><img src="./Img/StopWorkingInstance.png" width="300" height="33" alt="StopWorkingInstance"/></p>
 
-![StopWorkingInstance](./Img/StopWorkingInstance.png)
 
 ## Q613. Terminate all three EC2 instances and wait approx. 5 minutes. What happens? Why?
 The same error as the last question, and same reason that because the instance w attach to the load balancer is currently not working
