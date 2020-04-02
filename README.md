@@ -52,7 +52,10 @@ aws elbv2 create-listener --load-balancer-arn ${lb_arn} --protocol TCP --port 80
 ```
 ## Task 6.2 Serverless example 
 ## Q621. What is the list of events that the above URL triggers?
-When we put ?TableName=shopping-list at the end URL it return us information about a table name shopping-list in dynamodb, same idea if we put ?TableName=gsg-signup-table it return as information aobut the dynamodb we created 2 weeks ago. Inside the page, we can see the items that in the requested table and when did the table create.
+
+When we put ?TableName=shopping-list at the end URL it returns us information about a table name shopping-list in dynamodb, same idea if we put ?TableName=gsg-signup-table it return as information aobut the dynamodb we created 2 weeks ago. Inside the page, we can see the items that in the requested table and when did the table create.
+
+Therefore, as we understood from the lamda function and the general configuration we made the given URL Interacts with the shopping-list DynamoDB table by the using the roles defined inside the **serverless-controller-role**. In addition to that, the URL  Invokes the API gateway which serves as HTTP endpoint to display feteched results in the form of JSON or raw data.<br/> 
 
 ## Q622. Does the reply of the above URL match what it should be expected? Why?
 https://f0h43fef16.execute-api.eu-west-1.amazonaws.com/default/serverless-controller?TableName=shopping-list shows as what we expected. We add one new item in dynamodb that we created to see if we can see it in the website that URL return and the answer is yes as follow.
