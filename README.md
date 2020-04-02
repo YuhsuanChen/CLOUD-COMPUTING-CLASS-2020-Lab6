@@ -22,9 +22,14 @@ After we choose to enter the website, we can see the page shows that our instanc
 The two instance created with **auto scalling group** immediately created another running instance whereas the **apache-web-server** EC2 Instance was stopped.This is due to the the feature of auto scalling group which lets the instance to be in the running state  after we manually forced them to stop.  
 
 
+
+
 ## Q613. Terminate all three EC2 instances and wait approx. 5 minutes. What happens? Why?
 
 The same reasoning as before the two EC2 instances created using **auto scalling group** are still running after 5 minute, whereas the **apache-web-server**  instance terminated comppletely<br/>
+
+Note: In either cases the loader balancer is running
+
 
 ## Q614. How are you going to end this section regarding the use of AWS resources?
 
