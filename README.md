@@ -134,10 +134,13 @@ Using load balancer target group we register **apache-web-server**  EC2 Instance
 User was not allowed to scan, delete, update, and insert data to the DynamoDB shopping-list table when lambda_handler (event, context) function was invoked.**<br/>
 **Solution**:modify the user permission with **AmazonDynamoDBFullAccess** to give a full access to DynamoDB table 
 4. Unable to create **apache-web-server** instance with 8 GiB SSD.<br/>
-**Solution**: We use the defualt 50 Gib
-5. Unable to login to the  Ec2 instance using ssh -1 "configureation.pem" root@ec-domain using root account
 
-   **Solution**:We use ubuntu@ec2-instance-domain instead of root@ec2-instance-domain.
+We tried many times with different settings but was not successfully to lunch the instance with less than 50 GiB Solid State Drive.
+**Solution**: Finally, We forced to  use the defualt 50 GiB to lunch the instance.
+
+5. Unable to login to the  Ec2 instance using ssh -1 "configureation.pem" root@ec-domain using the root account
+
+   **Solution**:We use ssh - i **ubuntu@ec2-instance-domain** instead of ssh -i **root@ec2-instance-domain**
 
 
 
