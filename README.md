@@ -102,7 +102,7 @@ Then we can also check it through our lambda API endpoint, and see if the item w
 
 ## Q626. What are the minimum permissions that the user's API keys needs to execute the Lambda function locally?
 
-The minimum requirements to run the lambda function locally are to give read and write permission to the new user.
+To run the lambda function locally, the minimum permission required are to give **read and write** permission to the **new user** to acccess the DynamoDB table.
 
 ## Q627. Create a piece of code (Python or bash) to reproduce the above steps required to launch a new AWS Lambda function and AWS API gateway.
 
@@ -142,7 +142,7 @@ echo "The url is: https://${APIID}.execute-api.${REGION}.amazonaws.com/prod/igor
 
 
 ### Challenges we faced
-1. 	**AWS Load Balancer-503 services temporarily unavailable**<br/>
+1. 	**Lunching Load Balancer-503 services temporarily unavailable**<br/>
  <p align="center"><img src="./Img/service_503.PNG" width="50%" height="50%" alt="InstanceAlive"/></p>
       **Reason**: The target groups for the load balancer had no registered targets
 
