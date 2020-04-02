@@ -95,9 +95,12 @@ Then we can also check it through our lambda API endpoint, and see if the item w
 **Yes**, we are able to debug and run it locally. Using **aws configure list** we checked that we were using **root API keys**. 
 
 - We created another user with a full access to the shopping-list Dynamo table. 
-- we erased the previous root api keys
-- We configure the aws cli with the new user credetials
+- We erased the previous root API keys
+- We configure the aws cli with the new credentials(access key and secret key)
+   ![Configure](./Img/configure-user.PNG)
+
 - We run the lambda function with the new user and it runs succeffuly. 
+     ![Configure](./Img/result.PNG)
 
 
 ## Q626. What are the minimum permissions that the user's API keys needs to execute the Lambda function locally?
