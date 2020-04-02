@@ -19,12 +19,12 @@ After we choose to enter the website, we can see the page shows that our instanc
 
 ## Q612. Stop all three EC2 instances and wait approx. 5 minutes. What happens? Why?
 
-It shows 503 Service Temporarily unavailable, this is because there’s no working instance for the load balancer
- <p align="center"><img src="./Img/StopWorkingInstance.png" width="50%" height="50%" alt="StopWorkingInstance"/></p>
+The two instance created with **auto scalling group** immediately created another running instance whereas the **apache-web-server** EC2 was stopped at all.This is due to the the feature of auto scalling group which lets the instance to be in the running state  after we manually forced them to stop.  
 
 
 ## Q613. Terminate all three EC2 instances and wait approx. 5 minutes. What happens? Why?
-The same error as the last question, and same reason that because the instance w attach to the load balancer is currently not working
+
+The same reasoning as before the two EC2 instances created using **auto scalling group** are still running after 5 minute, whereas the **apache-web-server**  instance terminated comppletely<br/>
 
 ## Q615. Create a piece of code (Python or bash) to reproduce the above steps required to launch a new set of web servers with a load balancer. Start using the AMI that you have already created.
 
