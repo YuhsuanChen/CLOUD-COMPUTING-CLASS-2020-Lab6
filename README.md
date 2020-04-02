@@ -144,21 +144,21 @@ echo "The url is: https://${APIID}.execute-api.${REGION}.amazonaws.com/prod/igor
 ### Challenges 
 1. 	**AWS Load Balancer-503 services temporarily unavailable**<br/>
  <p align="center"><img src="./Img/service_503.PNG" width="50%" height="50%" alt="InstanceAlive"/></p>
-**Reason**: The target groups for the load balancer had no registered targets
+    **Reason**: The target groups for the load balancer had no registered targets
 
-**Solution**:Using load balancer target group we register **apache-web-server**  EC2 Instance to be used by **primary-apache-web-server-target**
+   **Solution**:Using load balancer target group we register **apache-web-server**  EC2 Instance to be used by **primary-apache-web-  server-target**
 
 2. **Error when we add data to the shopping list using the static web site we created**<br/>
-**Reason**: Existing shopping-list table primary Key(email) and thingid in the scripts.js and index.html was not matched 
-**Solutions**: Modifying the shopping-list table primary key with thingid instead of email to match with the **thingid** field in the script.js and index.html 
+  **Reason**: Existing shopping-list table primary Key(email) and thingid in the scripts.js and index.html was not matched 
+  **Solutions**: Modifying the shopping-list table primary key with thingid instead of email to match with the **thingid** field in the   script.js and index.html 
 
 3. **DynamoDB Access Denied**<br/>
-User was not allowed to scan, delete, update, and insert data to the DynamoDB shopping-list table when lambda_handler (event, context) function was invoked.**<br/>
+    User was not allowed to scan, delete, update, and insert data to the DynamoDB shopping-list table when lambda_handler (event, context) function was invoked.**<br/>
 **Solution**:modify the user permission with **AmazonDynamoDBFullAccess** to give a full access to DynamoDB table 
 4. Unable to create **apache-web-server** instance with 8 GiB SSD.<br/>
 
-We tried many times with different settings but was not successfully to lunch the instance with less than 50 GiB Solid State Drive.
-**Solution**: Finally, We forced to  use the defualt 50 GiB to lunch the instance.
+   We tried many times with different settings but was not successfully to lunch the instance with less than 50 GiB Solid State Drive.
+   **Solution**: Finally, We forced to  use the defualt 50 GiB to lunch the instance.
 
 5. Unable to login to the  Ec2 instance using ssh -1 "configureation.pem" root@ec-domain using the root account
 
