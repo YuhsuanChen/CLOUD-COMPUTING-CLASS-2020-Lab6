@@ -28,6 +28,10 @@ The same reasoning as before the two EC2 instances created using **auto scalling
 
 ## Q614. How are you going to end this section regarding the use of AWS resources?
 
+As we can tested from configureation the two ec2 instance created with auto scalling group  are always running regardless of we termoinate or stopp them. Even if we are not using them but they are running 
+
+In order to save aws resources 
+
 
 
 ## Q615. Create a piece of code (Python or bash) to reproduce the above steps required to launch a new set of web servers with a load balancer. Start using the AMI that you have already created.
