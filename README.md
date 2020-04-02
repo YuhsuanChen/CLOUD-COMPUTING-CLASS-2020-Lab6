@@ -19,7 +19,7 @@ After we choose to enter the website, we can see the page shows that our instanc
 
 ## Q612. Stop all three EC2 instances and wait approx. 5 minutes. What happens? Why?
 
-The two instance created with **auto scalling group** immediately created another running instance whereas the **apache-web-server** EC2 Instance was stopped.This is due to the the feature of auto scalling group which lets the instance to be in the running state  after we manually forced them to stop.  
+The two instance created with **auto scalling group** immediately they create another running instance whereas the **apache-web-server** EC2 Instance was stopped.This is due to the the feature of auto scalling group which lets the instance to be in the running state  after we manually forced them to stop.  
 
 
 
@@ -144,7 +144,7 @@ echo "The url is: https://${APIID}.execute-api.${REGION}.amazonaws.com/prod/igor
 
 ### Challenges 
 1. 	**AWS Load Balancer-503 services temporarily unavailable**<br/>
-![loadbalancer_503 error](./Img/service_503.PNG)
+ <p align="center"><img src="./Img/service_503.PNG" width="50%" height="50%" alt="InstanceAlive"/></p>
 **Reason**: The target groups for the load balancer had no registered targets
 
 **Solution**:Using load balancer target group we register **apache-web-server**  EC2 Instance to be used by **primary-apache-web-server-target**
