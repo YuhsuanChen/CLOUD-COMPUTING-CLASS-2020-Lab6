@@ -67,7 +67,7 @@ At first we got error because the key of shopping list that we used is email how
 Then we can also check it through our lambda API endpoint, and see if the item were successfully added to the database.
 ![AddnewThing2](./Img/AddnewThing2.png)
 
-## Testing and debugging
+## Testing and debugging 
 
 ## Q625. Have you been able to debug the code of the Lambda function? If the answer is yes, check that you are using the root API keys. Erase such keys and create a new testing user with the required permissions.
 
