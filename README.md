@@ -1,6 +1,6 @@
 # CLOUD-COMPUTING-CLASS-2020-Lab6
 
-
+## Task 6.1:Test your new system 
 ## Q611. What happens when you use https://your-load-balancer-url instead of http://your-load-balancer-url ? Why does that happen? How could you fix it?
 
 When using https, It’s just simply not working by showing page not respond and cannot open.
@@ -46,7 +46,7 @@ aws elbv2 register-targets --target-group-arn ${tg_arn} --targets Id=i-0f6778331
 aws elbv2 create-listener --load-balancer-arn ${lb_arn} --protocol TCP --port 80 --default-actions Type=forward,TargetGroupArn=${tg_arn}
 
 ```
-
+## Task 6.2 Serverless example 
 ## Q621. What is the list of events that the above URL triggers?
 When we put ?TableName=shopping-list at the end URL it return us information about a table name shopping-list in dynamodb, same idea if we put ?TableName=gsg-signup-table it return as information aobut the dynamodb we created 2 weeks ago. Inside the page, we can see the items that in the requested table and when did the table create.
 
@@ -66,6 +66,8 @@ At first we got error because the key of shopping list that we used is email how
 
 Then we can also check it through our lambda API endpoint, and see if the item were successfully added to the database.
 ![AddnewThing2](./Img/AddnewThing2.png)
+
+## Testing and debugging
 
 ## Q625. Have you been able to debug the code of the Lambda function? If the answer is yes, check that you are using the root API keys. Erase such keys and create a new testing user with the required permissions.
 
