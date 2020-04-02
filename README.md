@@ -97,9 +97,11 @@ Then we can also check it through our lambda API endpoint, and see if the item w
 - We created another user with a full access to the shopping-list Dynamo table. 
 - We erased the previous root API keys
 - We configure the aws cli with the new credentials(access key and secret key)
+   ### aws configure list 
    ![Configure](./Img/configure-user.PNG)
 
-- We run the lambda function with the new user and it runs succeffuly. 
+- We run the lambda function with the new user and it runs successfuly.
+  ### Lambda Function result body
      ![Configure](./Img/result.PNG)
 
 
