@@ -28,7 +28,9 @@ The same reasoning as before the two EC2 instances created using **auto scalling
 
 ## Q614. How are you going to end this section regarding the use of AWS resources?
 
-As we can tested from configureation the two ec2 instance created with auto scalling group  are always running regardless of we termoinate or stopp them. Even if we are not using them but they are running 
+As we can tested from configureation of the two ec2 instance created with auto scalling group are always running even after  we terminate/stop them. This leades to resource wastage specially for big applications it may cost a lot.<br/>
+Therfore, when we finish our task we need to terminate them maunally.
+
 
 In order to save aws resources 
 
