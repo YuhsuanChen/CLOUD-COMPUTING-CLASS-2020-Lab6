@@ -14,13 +14,13 @@ After add a new https rule to current security group, we see the picture belowed
 
 After we choose to enter the website, we can see the page shows that our instance( with id) alive.
 
- <p align="center"><img src="./Img/InstanceAlive.png" width="300" height="33" alt="InstanceAlive"/></p>
+ <p align="center"><img src="./Img/InstanceAlive.png" width="50%" height="50%" alt="InstanceAlive"/></p>
 
 
 ## Q612. Stop all three EC2 instances and wait approx. 5 minutes. What happens? Why?
 
 It shows 503 Service Temporarily unavailable, this is because there’s no working instance for the load balancer
- <p align="center"><img src="./Img/StopWorkingInstance.png" width="300" height="33" alt="StopWorkingInstance"/></p>
+ <p align="center"><img src="./Img/StopWorkingInstance.png" width="50%" height="50%" alt="StopWorkingInstance"/></p>
 
 
 ## Q613. Terminate all three EC2 instances and wait approx. 5 minutes. What happens? Why?
