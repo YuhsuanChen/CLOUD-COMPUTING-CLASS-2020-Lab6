@@ -58,7 +58,9 @@ When we put ?TableName=shopping-list at the end URL it returns us information ab
 Therefore, as we understood from the lamda function and the general configuration we made the given URL Interacts with the shopping-list DynamoDB table by the using the roles defined inside the **serverless-controller-role**. In addition to that, the URL  Invokes the API gateway which serves as HTTP endpoint to display feteched results in the form of JSON or raw data.<br/> 
 
 ## Q622. Does the reply of the above URL match what it should be expected? Why?
-https://f0h43fef16.execute-api.eu-west-1.amazonaws.com/default/serverless-controller?TableName=shopping-list shows as what we expected. We add one new item in dynamodb that we created to see if we can see it in the website that URL return and the answer is yes as follow.
+https://f0h43fef16.execute-api.eu-west-1.amazonaws.com/default/serverless-controller?TableName=shopping-list shows as what we expected.<br/>
+ At the very beginning, we were not 100% sure about what the given URL was invoking but later when we insert an item into the DynamoDB table using the static website and from the response we got things becomes more understable<br/> to see if we can see it in the website that URL return and the answer is yes as follow
+We add one new item in dynamodb that we created .
 
 ![ReturnDynamoDB](./Img/ReturnDynamoDB.png)
 
