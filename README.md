@@ -19,7 +19,7 @@ After we choose to enter the website, we can see the page shows that our instanc
 
 ## Q612. Stop all three EC2 instances and wait approx. 5 minutes. What happens? Why?
 
-The two instance created with **auto scalling group** immediately created another running instance whereas the **apache-web-server** EC2 was stopped at all.This is due to the the feature of auto scalling group which lets the instance to be in the running state  after we manually forced them to stop.  
+The two instance created with **auto scalling group** immediately created another running instance whereas the **apache-web-server** EC2 Instance was stopped.This is due to the the feature of auto scalling group which lets the instance to be in the running state  after we manually forced them to stop.  
 
 
 ## Q613. Terminate all three EC2 instances and wait approx. 5 minutes. What happens? Why?
