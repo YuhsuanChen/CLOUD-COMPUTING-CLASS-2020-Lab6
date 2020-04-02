@@ -26,6 +26,10 @@ The two instance created with **auto scalling group** immediately created anothe
 
 The same reasoning as before the two EC2 instances created using **auto scalling group** are still running after 5 minute, whereas the **apache-web-server**  instance terminated comppletely<br/>
 
+**Q614**. How are you going to end this section regarding the use of AWS resources?
+
+
+
 ## Q615. Create a piece of code (Python or bash) to reproduce the above steps required to launch a new set of web servers with a load balancer. Start using the AMI that you have already created.
 
 ```
