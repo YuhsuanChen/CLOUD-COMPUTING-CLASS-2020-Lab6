@@ -8,7 +8,7 @@ How to fixed it? By checking the listener tab below the load balancer screen, it
 
 ![loadbalancer_listenerport](./Img/loadbalancer_listenerport.png)
 
-After add a new https rule to current security group, we see the picture below that shows we can still enter the website by click Show Details (Common way when want to enter the not private https link)
+After we add a new https rule to current security group, we see the picture below that shows we can still enter the website by click Show Details (Common way when want to enter the not private https link)
 
  <p align="center"><img src="./Img/Connection_not_private.png" width="600" height="200" alt="Connection_not_private"/></p>
 
@@ -29,6 +29,9 @@ The two instance created with **auto scalling group** immediately created anothe
 The same reasoning as before the two EC2 instances created using **auto scalling group** are still running after 5 minute, whereas the **apache-web-server**  instance terminated comppletely<br/>
 
 Note: In either cases the loader balancer is running
+## Load Balancer when we stop/terminate auto scalling group EC2 Instance
+
+ <p align="center"><img src="./Img/Load-Balancer.PNG" width="50%" height="50%" alt="InstanceAlive"/></p>
 
 
 ## Q614. How are you going to end this section regarding the use of AWS resources?
