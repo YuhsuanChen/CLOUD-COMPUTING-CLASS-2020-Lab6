@@ -26,7 +26,7 @@ The two instance created with **auto scalling group** immediately created anothe
 
 The same reasoning as before the two EC2 instances created using **auto scalling group** are still running after 5 minute, whereas the **apache-web-server**  instance terminated comppletely<br/>
 
-**Q614**. How are you going to end this section regarding the use of AWS resources?
+## Q614. How are you going to end this section regarding the use of AWS resources?
 
 
 
